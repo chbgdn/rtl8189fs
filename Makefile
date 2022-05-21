@@ -153,13 +153,14 @@ CONFIG_PLATFORM_HISILICON_HI3798 = n
 CONFIG_PLATFORM_NV_TK1 = n
 CONFIG_PLATFORM_NV_TK1_UBUNTU = n
 CONFIG_PLATFORM_RTL8197D = n
-CONFIG_PLATFORM_AML_S905 = y
+CONFIG_PLATFORM_AML_S905 = n
 CONFIG_PLATFORM_ZTE_ZX296716 = n
 ###############################################################
 
 CONFIG_DRVEXT_MODULE = n
 
-export TopDIR ?= $(shell pwd)
+#export TopDIR ?= $(shell pwd)
+export TopDIR ?= $(src)
 
 ########### COMMON  #################################
 ifeq ($(CONFIG_GSPI_HCI), y)
